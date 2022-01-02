@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameter Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Parameter Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="http://www.facebook.com"/>
+    <classes>
+      <class name="testNGFramework.CrossBrowserTesting">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNGFramework.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Parameter Test(failed) -->
+</suite> <!-- Failed suite [Parameter Suite] -->
